@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: #f7e6ea;
+}
+
+.Cabecalho-topo img {
+    width: auto;
+}
+
+.Cabecalho-topo {
+    display: flex;
+    background-color: #f7d7df;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1em;
+}
+
+.Cabecalho-topo ul li {
+    background-color: #f7bdcb;
+    border-radius: 13px;
+    display: inline-block;
+    text-align: center;
+    padding: 1.95em;
+    margin-bottom: 1.5em;
+}
+
+.Cabecalho-topo ul li a {
+    text-decoration: none;
+    color: rgb(5, 19, 19);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    text-align: center;
+}
+
+@keyframes Carrossel {
+    0% {
+        transform: translateY(0);
+    }
+    25%,
+    47% {
+        transform: translateY(-50vh);
+    }
+    50%,
+    72% {
+        transform: translateY(-100vh);
+    }
+    75%,
+    97% {
+        transform: translateY(-150vh);
+    }
+    100% {
+        transform: translateY(0vh);
+    }
+}
+
+.Carrossel {
+    Width: 100%;
+    height: 50vh;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1em;
+}
+
+.Carrossel img {
+    display: block;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    animation: Carrossel 12s infinite linear;
+}
+
+.Produtos img {
+    margin-top: 25px;
+    border-radius: 1em;
+    width: 100%;
+}
+
+.Titulo {
+    display: block;
+    background-color: #f5b9c8;
+    padding: 1.5em;
+    box-sizing: border-box;
+    flex-direction: row;
+    text-align: center;
+    border-radius: 15px;
+    height: 15vh;
+}
+
+.Titulo h1 {
+    font-family: Segoe UI;
+    font-style: italic;
+    color: #f86b72;
+}
+
+.Titulo h3 {
+    font-family: Segoe UI;
+    font-style: italic;
+    font-optical-sizing: 1.5em;
+    color: #710c04;
+}
+
+.Servicos div a:hover {
+    cursor: pointer;
+    background-color: #d4877a;
+    ;
+    color: black;
+}
+
+.Servicos div:active {
+    cursor: pointer;
+    transition-duration: 3ms;
+    background-color: #f5eff1;
+    color: white;
+}
+
+.Servicos div {
+    background-color: #f3417ca4;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    text-align: center;
+}
+
+.Servicos {
+    text-align: center;
+}
+
+.Cardapio {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.Produtos {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.Produtos div {
+    width: 48%;
+    text-align: center;
+    background-color: white;
+    ;
+    border-radius: 1em;
+    margin: 25px auto;
+    border-radius: 1em;
+}
+
+.Produtos img {
+    margin: 1em auto;
+    text-align: center;
+    margin-top: 25px;
+    border-radius: 1em;
+    width: 90%;
+    height: 20vh;
+}
+
+.Produtos h2,
+p {
+    width: 90%;
+    margin: 0.5em auto;
+}
+
+.mapa {
+    color: rgb(0, 0, 0);
+    margin: 0 auto;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.Rodape {
+    background-color: white;
+    padding: 2em;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+
+input[type="submit"] {
+    background-color: #FFB6C1;
+    ;
+    border: none;
+    border-radius: 10px;
+    width: 15%;
+    height: 5%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    /* Vira Setinha */
+    cursor: pointer;
+    /* DuraÃ§Ã£o da TrasiÃ§Ã£o */
+    transition-duration: 1s;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+}
+
+
+/* Momento do clique */
+
+input[type="submit"]:active {
+    transition-duration: 1ms;
+    background-color: rgb(246, 243, 243);
+    color: black;
+}
+
+@media (min-width: 800px) {
+    .Cabecalho-topo {
+        background-size: cover;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-direction: center;
+    }
+    .Cabecalho-topo img {
+        width: 15%;
+    }
+    .Cabecalho-topo ul li {
+        display: inline-block;
+    }
+    .Servicos img {
+        margin-top: 25px;
+        border-radius: 1em;
+        width: 100%;
+    }
+    .Servicos {
+        margin-top: 3em;
+        flex-flow: row wrap;
+    }
+    .Servicos div {
+        margin-top: 3ems;
+        width: 35%;
+        margin-left: 1%;
+        margin-bottom: 1em;
+        margin-top: 0;
+    }
+    .Produtos div {
+        width: 30%;
+    }
+    .botao {
+        margin: auto 0;
+        padding: 1.5em;
+        font-size: 10px;
+    }
+    .Carrossel {
+        margin: auto;
+    }
+    .Servicos {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+    }
+    @media screen and (min-width: 1200px) {
+        .Cabecalho-topo {
+            display: flex;
+            flex-direction: row;
+            width: auto;
+        }
+        .Cabecalho-topo img {
+            width: 20%;
+        }
+        .Cabecalho-topo ul {
+            width: 100%;
+            margin: 0 auto;
+        }
+        .Cabecalho-topo ul li {
+            width: 100px;
+            margin: 3em;
+            text-align: center;
+        }
+        .Servicos {
+            width: auto;
+            margin: 0 auto;
+            display: flex;
+            flex-flow: row;
+        }
+        .Produtos {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-flow: row;
+            margin-top: 3em;
+        }
+        .Produtos div {
+            width: 30%;
+            margin: 0.3em;
+            margin-top: 2em;
+        }
+    }
+}

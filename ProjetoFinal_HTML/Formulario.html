@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Cadastro de Clientes</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Formulário HTML">
+    <style>
+        body {
+            background-color: pink;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #area #endereco {
+            position: relative;
+            width: 500px;
+            height: 270px;
+            display: block;
+            box-sizing: border-box;
+            padding: 10px;
+            background-color: GhostWhite;
+            border-radius: 5px;
+            border: none;
+        }
+        
+        .sobrecab {
+            background-color: #eedae5;
+            padding: 1.5em;
+            box-sizing: border-box;
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+        }
+        
+        .sobrecab ul li {
+            display: inline-block;
+            padding: .75em;
+            font-size: xx-large;
+        }
+        
+        .sobrecab li {
+            list-style: none;
+        }
+        
+        .sobrecab ul li:first-child {
+            margin-top: 1.5em;
+        }
+        
+        .sobrecab ul li a {
+            text-decoration: none;
+            color: GrayText;
+        }
+        
+        .sobrecab ul li a:hover {
+            background-color: #ccccff;
+            color: #efefef;
+            border-radius: 10px;
+        }
+        
+        legend {
+            font-style: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            color: rgb(61, 30, 52);
+        }
+        
+        label {
+            font-style: bold;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: white;
+            display: block;
+        }
+        
+        #area #formulario {
+            position: absolute;
+            display: block;
+        }
+        
+        fieldset {
+            width: 800px;
+            background-color: #fad9d0;
+            border-style: ridge;
+            border-radius: 15px;
+            margin: 0 auto;
+        }
+        
+        #formulario input.btn_submit {
+            border-style: ridge;
+            bottom: 0.5em;
+            right: 10px;
+            padding: 8px;
+            background-color: #e8b6ae;
+            border-radius: 5px;
+            font-style: bold;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: white;
+        }
+        
+        text area a:hover {
+            background-color: #ce6da9;
+        }
+        
+        .rodape {
+            background-color: #eedae5;
+            padding: 1em;
+            box-sizing: border-box;
+            text-align: center;
+            color: white;
+        }
+        
+        .mae {
+            display: flex;
+        }
+        
+        .mae div {
+            margin: 0 auto;
+        }
+        
+        .centro {
+            text-align: center;
+        }
+        
+        .flex {
+            display: flex;
+        }
+        
+        .flex input {
+            margin-right: 20px;
+        }
+        
+        .flex input[type="checkbox"] {
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="sobrecab">
+        <img src="imagens/Logo.png.png" alt="logo">
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="ProjetoFinal.html">Home</a></li>
+                    <li><a href="Sobre.html">Sobre</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <form id="formulario" autocomplete="off">
+        <fieldset>
+            <legend>Solicitação de Cadastro</legend>
+            <div id="area">
+                <div class="flex">
+                    <label>Nome:</label><input class="campo_nome" type="text">
+                    <label>Email:</label><input class="campo_email" type="text"><br>
+                </div>
+                <p>
+                    <legend>Tipo de Solicitação</legend>
+                    <select name="opção">
+				</p>
+				<p>
+					<legend>Opções</legend>
+				</p>
+				<option>Entrega</option>
+				<option>Reserva de Mesa</option>
+				<option>Reserva Salão de Festas</option>
+				<option>Encomenda</option>
+				</select>
+            </div>
+            <div id="endereco">
+                <p>
+                    <legend>Endereço</legend>
+                </p>
+                <div class="mae">
+                    <div>
+                        <label>Rua:</label><input class="campo_rua" type="text">
+                        <label>Numero:</label><input class="campo_nro" type="text">
+                    </div>
+                    <div>
+                        <label>Bairro:</label><input class="campo_bairro" type="text">
+                        <label>Complemento:</label><input class="campo_comp" type="text"><br>
+                    </div>
+                    <div>
+
+                        <label>Cidade:</label><input class="campo_cidade" type="text">
+                        <label>Estado:</label><input class="campo_estado" type="text">
+                    </div>
+                </div>
+                <div class="centro">
+                    <label>CEP:</label><input class="campo_CEP" type="text">
+                </div>
+            </div>
+
+            <div class="flex">
+                <input type="checkbox" name="copia" value="copia"></p><br>
+                <p><label>Envie-me uma cópia</label></p>
+            </div>
+            <legend>Mensagem:</legend><br><textarea class="msg" cols="35" rows="8"></textarea><br>
+            <input class="btn_submit" type="submit" value="Enviar">
+        </fieldset>
+    </form>
+
+    <footer class="rodape">
+        <p>Feito com Amor by DevNoite</p>
+    </footer>
+
+</html>
